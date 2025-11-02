@@ -2,13 +2,13 @@ export async function GET() {
   return Response.json({
     accountAssociation: {
       header:
-        "eyJmaWQiOjkxNTIsInR5cGUiOiJjdXN0b2R5Iiwia2V5IjoiMHgwMmVmNzkwRGQ3OTkzQTM1ZkQ4NDdDMDUzRURkQUU5NDBEMDU1NTk2In0",
-      payload: "eyJkb21haW4iOiJhcHAuZXhhbXBsZS5jb20ifQ",
+        "eyJmaWQiOjEzNTAyNTEsInR5cGUiOiJjdXN0b2R5Iiwia2V5IjoiMHgwYUNBMTExNGFGZkQ3RUY1RjY3MzFkNmJhMTEwN0U4ZGE4ZTc2OWU3In0",
+      payload: "eyJkb21haW4iOiJiYXNlLWFwcC1kZW1vLnZlcmNlbC5hcHAifQ",
       signature:
-        "MHgxMGQwZGU4ZGYwZDUwZTdmMGIxN2YxMTU2NDI1MjRmZTY0MTUyZGU4ZGU1MWU0MThiYjU4ZjVmZmQxYjRjNDBiNGVlZTRhNDcwNmVmNjhlMzQ0ZGQ5MDBkYmQyMmNlMmVlZGY5ZGQ0N2JlNWRmNzMwYzUxNjE4OWVjZDJjY2Y0MDFj",
+        "cLj1O3tCoFUO1IaXnjm0MIJ4cvbsRtEkkGrlVJCyYD8Hb81KXnVtsSv1TAg2Vf4yoWtlgN+TvWilnpbXktd92Bs=",
     },
     baseBuilder: {
-      ownerAddress: "0x...",
+      ownerAddress: "0x7A370C25Df2dfdb4c57969C2b6556F8E9B25621b",
     },
     miniapp: {
       version: "1",
