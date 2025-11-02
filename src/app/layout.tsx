@@ -1,6 +1,11 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
+import "@coinbase/onchainkit/styles.css";
+import Header from "@/components/layout/header";
+import RootProvider from "@/components/providers/root.provider";
+import Navbar from "@/components/layout/navbar";
+import { SafeArea } from "@coinbase/onchainkit/minikit";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -27,7 +32,13 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-        {children}
+        <RootProvider>
+          <SafeArea>
+            <Header />
+            {children}
+            <Navbar />
+          </SafeArea>
+        </RootProvider>
       </body>
     </html>
   );
